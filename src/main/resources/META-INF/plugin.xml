@@ -1,0 +1,38 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.sun.translate-jb-plugin</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Translate</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="" url="">Sun</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    translate plugin for intellij idea. translate plugin for intellij idea.
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.sun.config.PluginConfig"/>
+        <applicationConfigurable parentId="tools" instance="com.sun.config.PluginSettingsConfigurable"
+                                 id="com.sun.config.PluginSettingsConfigurable" displayName="Translate Plugin Settings"/>
+    </extensions>
+    
+    <actions>
+        <action id="TranslateAction" class="com.sun.action.TranslateAction" text="翻译"
+                description="the first plugin for translate" icon="DvcsImplIcons.BranchLabel">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"  />
+        </action>
+    </actions>
+</idea-plugin>
