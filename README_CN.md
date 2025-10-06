@@ -69,7 +69,7 @@
 
 ```bash
 # 克隆项目
-git clone <repository-url>
+git clone https://github.com/sunqing975/translate-jb-plugin.git
 
 # 进入项目目录
 cd translate-jb-plugin

@@ -67,7 +67,7 @@ Before using the plugin, you need to configure the Youdao Translation API key:
 
 ```bash
 # Clone the project
-git clone <repository-url>
+git clone https://github.com/sunqing975/translate-jb-plugin.git
 
 # Enter the project directory
 cd translate-jb-plugin
