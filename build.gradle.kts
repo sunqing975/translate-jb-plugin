@@ -67,4 +67,16 @@ tasks {
     runIde {
         autoReloadPlugins.set(true)
     }
+    
+    // 确保第三方库被打包到插件中
+    buildPlugin {
+        archiveBaseName.set("translate-jb-plugin")
+    }
+    
+    // 自动将所有运行时依赖打包到插件中
+    withType<org.jetbrains.intellij.tasks.PrepareSandboxTask> {
+        from(configurations.runtimeClasspath) {
+            into("lib")
+        }
+    }
 }
