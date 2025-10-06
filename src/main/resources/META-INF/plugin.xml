@@ -5,7 +5,7 @@
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Translate</name>
+    <name>Translate GBK</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="" url="">Sun</vendor>
@@ -14,7 +14,7 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    translate plugin for intellij idea. translate plugin for intellij idea.
+    Translation plugin for IntelliJ IDEA that supports translating selected text into Simplified Chinese. Perfect for quickly translating documentation, comments, and other content during development to enhance international development experience.
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -31,7 +31,7 @@
     
     <actions>
         <action id="TranslateAction" class="com.sun.action.TranslateAction" text="翻译"
-                description="the first plugin for translate" icon="DvcsImplIcons.BranchLabel">
+                description="Translation plugin for IntelliJ IDEA that supports translating selected text into Simplified Chinese. Perfect for quickly translating documentation, comments, and other content during development to enhance international development experience." icon="DvcsImplIcons.BranchLabel">
             <add-to-group group-id="EditorPopupMenu" anchor="first"  />
         </action>
     </actions>
